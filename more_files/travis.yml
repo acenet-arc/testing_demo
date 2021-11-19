@@ -1,4 +1,4 @@
-# copy this file to `.travis.yml` in the repo's root directory
+# ~/.travis.yml
 language: python
 python:
   - "2.7"

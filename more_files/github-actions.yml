@@ -4,7 +4,7 @@ on: [push]
 jobs:
   test-my-python-code:
     # select the os-image these jobs should run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     
     # define the Python versions that should be used
     strategy:

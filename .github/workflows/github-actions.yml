@@ -1,0 +1,29 @@
+# copy this file to .github/workflows/github-actions.yml in this repository
+name: learn-github-actions
+on: [push]
+jobs:
+  test-my-python-code:
+    # select the os-image these jobs should run on
+    runs-on: ubuntu-20.04
+    
+    # define the Python versions that should be used
+    strategy:
+      matrix:
+        python-version: [2.7, 3.8]
+
+    steps:
+      # step to check out the repository
+      - uses: actions/checkout@v2
+
+      # step to create the Python environment
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # step to install the dependencies
+      - name: Install dependencies
+        run: "pip install -r requirements.txt"
+
+      # step to run tests
+      - run: pytest -v

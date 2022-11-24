@@ -14,7 +14,7 @@ def test_zero():
 
 def test_double():
     # This one will fail in Python 2
-    num_list=[1,2,3,4]
+    num_list=[1.0,2.0,3.0,4.0]
     obs = mean(num_list)
     exp = 2.5
     assert obs == exp

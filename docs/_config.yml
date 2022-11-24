@@ -1,0 +1,6 @@
+# _config.yml
+# Jekyll configuration
+name:  My Cool Page
+title: My Cool Page
+description: A Documentation Page created with Jekyll
+theme: jekyll-theme-architect

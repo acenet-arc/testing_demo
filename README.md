@@ -9,9 +9,10 @@ https://acenet-arc.github.io/git-collaboration
 See [Workflow.md](Workflow.md) for the steps how this repository
 is intended to be used.
 
-The files used are based on Katy Huff's SWC lesson on testing.
-Lesson: http://katyhuff.github.io/python-testing/
-Lesson repo: https://github.com/katyhuff/python-testing
+The files used are based on Katy Huff's SWC lesson on testing:
+
+* Lesson: https://carpentries-incubator.github.io/python-testing/
+* Lesson repo: https://github.com/carpentries-incubator/python-testing/
 
 This repo has example pipeline definitions for:
 * GitHub actions (`./more_files/github_actions.yml`)
